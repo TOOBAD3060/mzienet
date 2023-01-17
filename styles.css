@@ -1,0 +1,278 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* .container{
+    padding: 20px 40px;
+} */
+
+/*  Nav Menu Styling */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    transition: all 500ms;
+    font-size: 20px;
+}
+nav ul li a:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: brown;
+    border-radius:5px;
+    padding: 6px 15px;
+    font-size: 12px;
+}
+nav h2.get_a_quote a{
+    text-decoration: none;
+    color: #fff;
+    background-color: brown;
+    border-radius:5px;
+    padding: 6px 15px;
+    font-size: 17px;
+    /* font-style: oblique; */
+} 
+nav h2.get_a_quote a:hover{
+    background-color: white;
+    color: brown;
+
+} 
+
+/* First section styling */
+section.first{
+    background-color: brown;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+section.first h1.title{
+    color: #fff;
+    font-size: 65px;
+    margin-top: 1.3em;
+}
+section.first p.sub-text{
+    margin: 1em 0;
+    color: #fff;
+    font-size: 21px;
+}
+section.first a.get-started{
+    background-color: #fff;
+    padding: 7px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: black;
+    transition: color 500ms;
+    margin-bottom: 3em;
+    font-size: 21px;
+}
+section.first a.get-started:hover{
+
+    color: brown;
+}
+section.first div.two{
+    margin-top: 5em;
+}
+section.first img{
+    /* z-index: -1; */
+    
+    width:170px;
+    position: relative;
+    left: -80px;
+    border-radius: 10px;
+}
+
+/* Display Image */
+
+div.display-image{
+    display: flex;
+    justify-content: center;
+
+}
+div.display-image img{
+    border-radius: 10px;
+    width: 680px;
+    height: 300px;
+    position: relative;
+    top: -8.5em;
+    
+}
+
+/* second section styling */
+section.second {
+    width: 80%;
+    margin: 0 auto;
+}
+section.second h3.wwa{
+    position: relative;
+    top: -3.5em;
+    color: brown;
+}
+section.second h1.description{
+    position: relative;
+    top: -2em;
+    font-size: 31px;
+}
+section.second p.desc-text{
+    position: relative;
+    top: -1.5em;
+    font-size:20px ;
+}
+
+/* section.second div.desc-images{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: gold;
+    height: 200px;
+    align-items: center;
+     display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+} */
+
+/* section.second div.desc-images .image img{
+    width:100px;
+    height: 250px;
+} */
+section.second div.desc-images .db{
+    display: grid;
+}
+/* section.second div.desc-images .image.db img{
+    height: 125px;
+} */
+
+
+/* third section */
+
+section.third div.what_we_do{
+    margin: 1em 0 2em 7.5em;
+    /* display: flex;
+    justify-content: space-around; */
+}
+section.third h3.wwd{
+    color: brown;
+}
+section.third  h1.info-header{
+    margin: 0.5em 0;
+    font-size: 28px;
+}
+section.third p.info-text{
+    font-size: 21px;
+}
+section.third div.learn-more{
+    width: 83%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100vh;
+}
+section.third div.learn-more article.item{
+    width: 250px;
+    height: 200px;
+}
+section.third div.learn-more article.item img{
+    background-color: lightgrey;
+    padding: 10px 10px;
+}
+section.third div.learn-more article.item h2.item-header{
+    margin: 1em 0;
+}
+
+section.third div.learn-more article.item p.item-text{
+    color: gray;
+    font-size: 18px;
+    margin-bottom: 0.7em;
+}
+section.third div.learn-more article.item a{
+    text-decoration: none;
+    color: brown;
+    font-size: 20px;
+}
+
+/* fourth section */
+
+section.fourth{
+    width: 83%;
+    margin: 2em auto;
+}
+section.fourth h3{
+    color: brown;
+
+}
+section.fourth h1{
+    margin: 0.5em 0;
+    font-size: 37px;
+}
+section.fourth p{
+    font-size: 20px;
+}
+
+section.fourth div.qualities{
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: space-around;
+}
+section.fourth div.qualities img{
+    background-color: lightgray;
+    padding: 10px 12px;
+    position: relative;
+    right: -1.5em;
+    top: -0.3em;
+}
+
+/* Article break into tech */
+
+article.break-into-tech{
+    margin-top: 5em;
+    height: 400px;
+    background-image:url(images/displayImage.svg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* background-position: center; */
+}
+article.break-into-tech::after{
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 400px;
+    background: rgba(255,153,0,0.3) ;
+    z-index: 0.5;
+    position: relative;
+    top: -4em;
+}
+article.break-into-tech div{
+    color: #fff;
+    z-index: 10000;
+    margin: 0 auto;
+    width: 400px;
+    position: relative;
+    bottom: -175px;
+}
+
+article.break-into-tech div h2{
+    font-size: 37px;
+    /* margin-bottom: 1rem; */
+}
+article.break-into-tech div a{
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 17px 35px;
+    border-radius: 8px;
+    text-decoration: none;
+    position: relative;
+    right: -6em;
+    bottom: -2rem;
+    font-size: 21px;
+}
