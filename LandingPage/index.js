@@ -1,7 +1,6 @@
 //  Getting elements
 
 const slicedText = document.getElementById("sliced-text")
-const currentYear = document.querySelector("span.year")
 //  sliced text
 
 const theText = "Innovating with Technology";
@@ -14,5 +13,3 @@ function slicer() {
     setTimeout(slicer,100)
 }
 
-//  current year
-currentYear.textContent = new Date().getFullYear() 

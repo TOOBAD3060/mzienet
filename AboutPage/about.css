@@ -1,0 +1,147 @@
+/* about section */
+
+section.about{
+    margin-top: 1em;
+    padding: 2em 0 0 7em;
+    background-color: rgba(17, 170, 217, 0.925);
+    height: 60vh;
+    color: #fff;
+    margin: 0 auto;
+}
+
+section.about h1.about-us{
+    font-size: 45px;   
+}
+section.about h3.about-intro{
+    margin: 0.7em 0;
+    font-size: 26px;
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+section.about p.about-text{
+    /* margin: 3em 0; */
+    font-size: 21px;
+    font-weight: 600;
+    width: 600px;
+}
+
+/* Display Images */
+
+article.display_images{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+
+    height: 100px;
+    margin: 0 auto;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+    background-color: red; */
+} 
+ article.display_images img{
+    position: relative;
+    width: 180px;
+    height: 300px;
+    border-radius: 70px;
+    top: -11em;
+}
+/*article.display_images .double img{
+    height: 100px;
+    width: 150px;
+    border-radius: 50%;
+    border-bottom-right-radius: 7px  ;
+
+} */
+
+/* Members -- Our team */
+
+section.our-team{
+    margin-left: 5em;
+}
+section.our-team h1.ot-header{
+font-weight: 800;
+font-size: 30px;
+}
+section.our-team p.ot-info{
+    margin: 1em 0 2em;
+    font-size: 20px;
+    width: 500px;
+}
+
+section.our-team article.members{
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+section.our-team article.members img{
+    height: 200px;
+}
+section.our-team article.members div.name-position{
+    width: 100px;
+    text-align: center;
+    background-color: gray;
+    border-radius: 20px;
+    position: relative;
+    top: -2.5em;
+    right: -2em;
+}
+
+/* Our Core Values */
+
+section.core-values{
+    margin: 3em 0 2em 5em;
+}
+section.core-values h3.wdu{
+    color: brown;
+}
+
+section.core-values h1.ocv{
+    margin: 1em 0;
+}
+section.core-values article.values-display{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+}
+section.core-values article.values-display div{
+    width: 320px;
+}
+
+section.core-values article.values-display div p.each-value{
+    font-size: 21px;
+    margin: 0.6em 0;
+}
+
+/* Mail Section */
+
+article.mail-section{
+    margin: 2em 0 2em 5em ;
+}
+article.mail-section p.mail-text{
+    font-size: 19px;
+}
+article.mail-section p.mail-text + h1{
+    margin: 0.3em 0;
+}
+article.mail-section p.send-mail{
+    font-size: 17px;
+    font-style: italic;
+}
+
+/* Full width Image */
+div.full-width-image{
+    height: 70vh;
+    background-image: url(/images/displayImage.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+/* Footer */
+footer.about-footer .footer-contents{
+    margin-top: 0;
+}
