@@ -1,0 +1,93 @@
+
+section.co-working{
+    height: 50vh;
+    background-color: rgba(25, 160, 252,0.7);
+    padding: 3em 0 0 6em;
+}
+section.co-working h1.cws{
+        color: #fff;
+        font-size: 50px;
+}
+section.co-working p.co-work-text{
+    margin: 1em  0;
+    font-size: 20px;
+    color: #fff;
+    width: 300px;
+}
+section.co-working a.book-a-space{
+    text-decoration: none;
+    color: white;
+    background-color: goldenrod;
+    padding: 10px 25px;
+    border-radius: 7px;
+    font-size: 18px;
+}
+
+/* Video Section */
+
+section.video {
+    background-color: black;
+    height: 60vh;
+    padding-top: 6em ;
+    text-align: center;
+}
+section.video img#play{
+    position: relative;
+    left: -3.1em;
+    top: -1.4em;
+    cursor: pointer;
+}
+section.video::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    border-radius: 500px;
+    display: inline-block;
+    background-color: wheat;
+    position: relative;
+    right: -4.5em;
+    top: -0.5em;
+}
+section.video img#txt{
+    position: relative;
+    bottom: -1em;
+
+}
+
+        /* Offers */
+
+ section.offers{
+        margin: 3em 0 0 6em;
+        height: 80vh;
+        /* background-color: rebeccapurple; */
+    }
+
+    section.offers h3{
+        color: brown;
+    }
+    section.offers h1{
+        margin: 0.5em 0 1em;
+        font-weight: 400;
+        width: 500px;   
+    }
+
+    section.offers article.desk-img{
+        height: 60vh;
+        display: flex;
+        /* align-items: center; */
+        /* justify-content: space-between; */
+    }
+
+    section.offers  article.desk-img ul{
+        flex: 1;
+    }
+    section.offers  article.desk-img div.desk-text{
+        flex: 3;
+    }
+    section.offers  article.desk-img div.desk-text img{
+            width: 600px;
+            height: 499px;
+    }
+    section.offers  article.desk-img div.desk-text p{
+            width: 600px;
+    }
