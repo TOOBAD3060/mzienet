@@ -1,0 +1,122 @@
+section.services{
+    height: 70vh;
+    background-image: url(/images/people.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 3em 0 0 6em;
+    position: relative;
+    /* z-index: -4; */
+}
+section.services::after{
+    content: "";
+    display: inline-block;
+    width: 115%;
+    height: 70vh;
+    position: relative;
+    top: -2.9em;
+    left: -6em;
+    z-index: 0.5;
+    overflow-x: hidden;
+    background-color: rgba(230, 60, 60,0.6);
+}
+section.services div.details{
+    z-index: 10000;
+    color: #fff;
+    position: absolute;
+}
+section.services h1.service-head{
+        color: #fff;
+        font-size: 60px;
+        
+}
+section.services p.service-text{
+    margin: 1em  0 1.5em;
+    font-size: 25px;
+    color: #fff;
+    width: 700px;
+}
+section.services a.get_started{
+    text-decoration: none;
+    color: white;
+    background-color: goldenrod;
+    padding: 10px 25px;
+    border-radius: 7px;
+    font-size: 18px;
+    
+}
+
+/* What we do */
+
+section.what-we-do{
+    margin: 3em 0 0 6em;
+}
+section.what-we-do h3.wwd{
+    color: brown;
+}
+
+section.what-we-do h1.wwd-head{
+    margin: 0.8em 0;
+    font-size: 30px;
+}
+section.what-we-do p.wwd-text{
+    font-size: 21px;
+    width: 400px;
+}
+section.what-we-do article {
+    margin: 2em 0 3em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+}
+section.what-we-do article div{
+    width: 300px;
+}
+section.what-we-do article div img{
+    background-color: rgba(230, 60, 60,0.3);
+    padding: 6px 10px;
+}
+section.what-we-do article div h4{
+    margin: 1em 0;
+    font-size: 20px;
+}
+section.what-we-do article div p{
+    margin-bottom: 0.7em;
+    font-size: 17px;
+}
+
+section.what-we-do article div a{
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+    font-style: italic;
+}
+section.what-we-do article div a::after{
+    content: "";
+    display: inline-block;
+    width: 80px;
+    height: 3px;
+    background-color: rgba(230, 60, 60,0.6);
+    position: relative;
+    bottom: -12px;
+    left: -80px;
+}
+   
+        /* Looking for young talent */
+   section.young-talent{
+        height: 200px;
+        display: flex;
+        align-items: center;
+        margin-left: 6em;
+   }     
+   section.young-talent .yt-text {
+    font-size: 21px;
+    width: 420px;
+   }
+   section.young-talent .yt-head{
+    margin: 1em 0;
+
+   }
+   section.young-talent .send-mail{
+    font-size: 18px;
+   }
