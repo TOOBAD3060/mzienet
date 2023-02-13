@@ -61,7 +61,7 @@ nav h2.get_a_quote a:hover{
     /* Drop down */
 #dropdown1,#dropdown2{
     cursor: pointer;
-    transition: all 500ms;
+    transition: all 250ms;
 }
 #dropdown1:hover,#dropdown2:hover{
     background-color: gold;
@@ -80,7 +80,7 @@ ul.drop-down-menus{
     border-radius: 7px;
     left: 35%;
     top: -100%;
-    transition: all 1s;
+    transition: all 250ms;
     z-index: 1000000000;
 }
 ul.drop-down-menus.active{
@@ -111,7 +111,7 @@ ul.services-drop-down{
     border-radius: 7px;
     right: 27%;
     top: -100%;
-    transition: all 1s;
+    transition: all 250ms;
     z-index: 111111111;
 }
 ul.services-drop-down.active{
@@ -133,7 +133,6 @@ footer {
     height: 70vh;
     background-color: brown;
     color: #fff;
-    font-family: 'Poppins', sans-serif;
 }
 footer .footer-contents{
     margin-top: 2em;
