@@ -1,7 +1,11 @@
 
+body{
+    overflow-x: hidden;
+}
 /* First section styling */
 section.first{
-    background-color: brown;
+    background-image: url(/images/landingPage-bg.svg);
+    background-size: cover;
     height: 80vh;
     display: flex;
     justify-content: space-around;
@@ -9,6 +13,7 @@ section.first{
 }
 section.first h1.title{
     color: #fff;
+    font-family: 'Poppins', sans-serif;
     font-size: 65px;
     width: 500px;
     margin-top: 1.3em;
@@ -16,9 +21,12 @@ section.first h1.title{
 section.first p.sub-text{
     margin: 1em 0;
     color: #fff;
-    font-size: 21px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
 section.first a.get-started{
+    font-family: 'Poppins', sans-serif;
     background-color: #fff;
     padding: 7px 20px;
     text-decoration: none;
@@ -26,7 +34,7 @@ section.first a.get-started{
     color: black;
     transition: color 500ms;
     margin-bottom: 3em;
-    font-size: 21px;
+    font-size: 18px;
 }
 section.first a.get-started:hover{
 
@@ -46,7 +54,7 @@ section.first img{
 
 /* Display Image */
 
-div.display-image{
+/* div.display-image{
     display: flex;
     justify-content: center;
 
@@ -58,30 +66,35 @@ div.display-image img{
     position: relative;
     top: -8.5em;
     
-}
+} */
 
 /* second section styling */
 section.second {
     width: 80%;
-    margin: 0 auto;
+    margin: 6em auto 0;
     
 }
 section.second h3.wwa{
     position: relative;
     top: -3.5em;
     color: brown;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
 }
 
 section.second h1.description{
     position: relative;
     top: -2em;
     font-size: 31px;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 section.second p.desc-text{
     position: relative;
     top: -1.5em;
-    font-size:20px;
+    font-family: 'Poppins', sans-serif;
+    font-size:18px;
 }
 
 section.second  .desc-images{
@@ -89,13 +102,14 @@ section.second  .desc-images{
     justify-content: space-between; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    
+    width: 86%;
 }
 
 section.second  .desc-images img{
     width: 170px;
     height: 180px;
     border-radius: 7px;
+    
 }
 section.second  .desc-images .image.db img{
     height: 90px;
@@ -104,31 +118,40 @@ section.second  .desc-images .image.db img{
 /* third section */
 
 section.third div.what_we_do{
-    margin: 3em 0 2em 7.5em;
+    margin: 3em 0 2em 7.7em;
     /* display: flex;
     justify-content: space-around; */
 }
 section.third h3.wwd{
     color: brown;
+    font-family: 'Poppins', sans-serif;
+
 }
 section.third  h1.info-header{
     margin: 0.5em 0;
-    font-size: 28px;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+
 }
 section.third p.info-text{
-    font-size: 21px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    width: 600px;
 }
 section.third div.learn-more{
-    width: 83%;
-    margin: 0 auto;
+    width: 65%;
+    margin-left: 7.5em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 60px;
-    height: 100vh;
+    gap: 30px;
+    height: 80vh;
+    
 }
 section.third div.learn-more article.item{
-    width: 250px;
-    height: 200px;
+    /* width: 250px; */
+    /* height: 200px; */
+    text-decoration: none;
+    /* background-color: rgba(255,153,0,0.3); */
 }
 section.third div.learn-more article.item img{
     background-color: lightgrey;
@@ -136,19 +159,25 @@ section.third div.learn-more article.item img{
 }
 section.third div.learn-more article.item h2.item-header{
     margin: 1em 0;
+    height: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
 }
 
 section.third div.learn-more article.item p.item-text{
     color: gray;
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 0.7em;
+    font-family: 'Roboto', sans-serif;
 }
 section.third div.learn-more article.item a{
     text-decoration: none;
     color: brown;
-    font-size: 20px;
+    font-size: 14px;
     transition: all 500ms;
-    
+    font-family: 'Roboto', sans-serif;
+
     
 }
 section.third div.learn-more article.item a:hover{
@@ -163,14 +192,18 @@ section.fourth{
 section.fourth h3{
     color: brown;
     margin-top: 5em;
-
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
 }
 section.fourth h1{
     margin: 0.5em 0;
     font-size: 37px;
+    font-family: 'Poppins', sans-serif;
 }
 section.fourth p{
-    font-size: 20px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    /* width: 400px; */
 }
 
 section.fourth div.qualities{
@@ -185,7 +218,18 @@ section.fourth div.qualities img{
     right: -1.5em;
     top: -0.3em;
 }
-
+section.fourth div.qualities p{
+    font-family:'Roboto', sans-serif ;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+section.fourth div.qualities span{
+    position: relative;
+    display: inline-block;
+    width: 170px;
+    left: -25px;
+    font-family: 'Poppins', sans-serif;
+}
 /* Article break into tech */
 
 article.break-into-tech{
@@ -211,13 +255,14 @@ article.break-into-tech div{
     color: #fff;
     z-index: 10000;
     margin: 0 auto;
-    width: 400px;
+    width: 500px;
     position: relative;
     bottom: -175px;
 }
 
 article.break-into-tech div h2{
     font-size: 37px;
+    font-family: 'Poppins', sans-serif;
     /* margin-bottom: 1rem; */
 }
 article.break-into-tech div a{
@@ -230,6 +275,7 @@ article.break-into-tech div a{
     right: -6em;
     bottom: -2rem;
     font-size: 21px;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* fifth section */
@@ -242,6 +288,13 @@ section.fifth{
 section.fifth h3{
     color: brown;
     margin-bottom: 1em;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+section.fifth h1{
+    width: 500px;
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif;
 }
 section.fifth .customers-logo{
     position: relative;
