@@ -4,10 +4,10 @@ body{
 
 section.co-working{
     height: 70vh;
-    background-image: url(/images/people.svg);
+    background-image: url(/images/co-work.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
     padding: 3em 0 0 6em;
     position: relative;
     /* z-index: -4; */
@@ -22,7 +22,7 @@ section.co-working::after{
     left: -6em;
     z-index: 0.5;
     overflow-x: hidden;
-    background-color: rgba(25, 160, 252,0.6);
+    background-color: rgba(25, 160, 252,0.3);
 }
 section.co-working div.details{
     z-index: 10000;
@@ -32,13 +32,16 @@ section.co-working div.details{
 section.co-working h1.cws{
         color: #fff;
         font-size: 60px;
-        
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
 }
 section.co-working p.co-work-text{
     margin: 1em  0 1.5em;
     font-size: 25px;
     color: #fff;
     width: 300px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 }
 section.co-working a.book-a-space{
     text-decoration: none;
@@ -47,7 +50,8 @@ section.co-working a.book-a-space{
     padding: 10px 25px;
     border-radius: 7px;
     font-size: 18px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 }
 
 /* Video Section */
@@ -91,11 +95,16 @@ section.video img#txt{
 
     section.offers h3{
         color: brown;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        font-weight: 800;
     }
     section.offers h1{
         margin: 0.5em 0 1em;
         font-weight: 400;
-        width: 500px;   
+        width: 500px;  
+        font-size: 35; 
+        font-family: 'Poppins', sans-serif;
     }
 
     section.offers article.desk-img{
@@ -114,6 +123,8 @@ section.video img#txt{
         font-size: 19px;
         text-decoration: none;
         color: #000;
+        font-weight: 400;
+        font-family: 'Poppins', sans-serif;
     }
     section.offers  article.desk-img div.desk-text{
         flex: 3;
@@ -125,9 +136,11 @@ section.video img#txt{
     }
     section.offers  article.desk-img div.desk-text p{
             width: 600px;
-            font-size: 17px;
+            font-size: 14px;
             color: gray;
             margin-top: 1em;
+            font-weight: 400;
+            font-family: 'Roboto', sans-serif;
     }
 
             /* Dedicated desk rating */
@@ -140,6 +153,14 @@ section.video img#txt{
 
     section.rating h3.rate{
         margin: 1em 0;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    section.rating h3.rate + span{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
     }
 
     /* Benefits */
@@ -148,7 +169,10 @@ section.video img#txt{
         margin: 1em 0 3em 6em;
     }
     section.benefits h2{
-            margin-bottom: 1em;
+        margin-bottom: 1em;
+        font-family: 'Roboto', sans-serif;
+        font-size: 24px;
+        font-weight: 800;
     }
     section.benefits .innovative-img{
         display: flex;
@@ -160,6 +184,8 @@ section.video img#txt{
         line-height: 30px;
         color: gray;
         font-size: 16.5px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
     }
     /* section.benefits .innovative-img article{
         width: 50%;
@@ -178,11 +204,15 @@ section.video img#txt{
     }
     section.gallery h3{
         color: brown;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        font-weight: 800;
     }
     section.gallery h1{
-        font-weight: 500;
+        font-weight: 400;
         font-size: 30px;
         margin: 0.5em 0;
+        font-family: 'Poppins', sans-serif;
     }
     section.gallery div{
         display: flex;
@@ -210,6 +240,9 @@ section.video img#txt{
         text-decoration: none;
         border-radius: 5px;
         transition: all 500ms;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        font-weight: 500;
     }
     section.gallery a.book-a-tour:hover{
         background-color: brown
