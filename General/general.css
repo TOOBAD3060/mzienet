@@ -133,6 +133,7 @@ footer {
     height: 70vh;
     background-color: brown;
     color: #fff;
+    font-family: 'Poppins', sans-serif;
 }
 footer .footer-contents{
     margin-top: 2em;

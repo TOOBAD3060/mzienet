@@ -44,11 +44,9 @@ section.first div.two{
     margin-top: 5em;
 }
 section.first img{
-    /* z-index: -1; */
-    
-    width:170px;
+
     position: relative;
-    left: -80px;
+    left: -180px;
     border-radius: 10px;
 }
 
