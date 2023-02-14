@@ -7,6 +7,7 @@ section.portfolio{
     background-position: center;
     padding: 3em 0 0 6em;
     position: relative;
+    font-family: 'Poppins', sans-serif;
     /* z-index: -4; */
 }
 section.portfolio::after{
@@ -29,13 +30,15 @@ section.portfolio div.details{
 section.portfolio  h1.portfolio-head{
         color: #fff;
         font-size: 60px;
-        
+    
+        font-weight: 700;
 }
 section.portfolio  p.portfolio-text{
     margin: 1em  0 1.5em;
     font-size: 25px;
     color: #fff;
     width: 700px;
+    font-weight: 700;
 }
 section.portfolio  a.get_started{
     text-decoration: none;
@@ -43,31 +46,37 @@ section.portfolio  a.get_started{
     background-color: goldenrod;
     padding: 10px 25px;
     border-radius: 7px;
-    font-size: 18px;
-    
+    font-size: 20px;
+    font-weight: 500;
 }
 /* What we do */
 
 section.what-we-do{
     margin: 3em 0 0 6em;
+    font-family: 'Poppins', sans-serif;
 }
 section.what-we-do h3.wwd{
     color: brown;
+    font-size: 14px;
+    font-weight: 800;
 }
 
 section.what-we-do h1.wwd-head{
     margin: 0.8em 0;
-    font-size: 30px;
+    font-size: 36px;
+    font-family: 700;
 }
 section.what-we-do p.wwd-text{
-    font-size: 21px;
+    font-size: 16px;
     width: 400px;
+    font-weight: 400;
 }
 
 /*  Project and Images */
 
 article.projects_and_images{
     margin: 2em 0 0 6em;
+    font-family: 'Poppins', sans-serif;
 }
 article.projects_and_images div.each-project{
     display: flex;
@@ -79,27 +88,36 @@ article.projects_and_images div.each-project{
 article.projects_and_images div.each-project div.text{
     line-height: 25px;
 }
-
+article.projects_and_images div.each-project div.text h1{
+    font-weight: 700;
+    font-size: 36px;
+}
 article.projects_and_images div.each-project div.text h3{
     margin: 1em 0;
+    font-weight: 700;
+    font-size: 16px;
 }
 article.projects_and_images div.each-project div.text p{
-    font-size: 17px;
+    font-size: 16px;
     margin-bottom: 2em;
     width: 500px;
+    font-weight: 400;
 }
 
 article.projects_and_images div.each-project div.text a{
     background-color:gainsboro;
     padding: 10px 25px;
     color: #000;
-    font-size: 19px;
+    font-weight: 600;
     text-decoration: none;
     border-radius: 7px;
     transition: all 500ms;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
 }
 article.projects_and_images div.each-project div.text a:hover{
     background-color: gray;
+    font-size: 19px;
 }
 
 
@@ -109,15 +127,20 @@ article.projects_and_images div.each-project div.text a:hover{
         display: flex;
         align-items: center;
         margin-left: 6em;
+        font-family: 'Poppins', sans-serif;
    }     
    section.young-talent .yt-text {
-    font-size: 21px;
+    font-size: 24px;
     width: 420px;
+    font-weight: 400;
    }
    section.young-talent .yt-head{
     margin: 1em 0;
+    font-weight: 700;
+    font-size: 36px;
 
    }
    section.young-talent .send-mail{
-    font-size: 18px;
+    font-size: 24px;
+    font-weight: 400;
    }

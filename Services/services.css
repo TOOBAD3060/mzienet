@@ -30,13 +30,16 @@ section.services div.details{
 section.services h1.service-head{
         color: #fff;
         font-size: 60px;
-        
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
 }
 section.services p.service-text{
     margin: 1em  0 1.5em;
-    font-size: 25px;
+    font-size: 24px;
     color: #fff;
-    width: 700px;
+    width: 800px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 }
 section.services a.get_started{
     text-decoration: none;
@@ -44,8 +47,9 @@ section.services a.get_started{
     background-color: goldenrod;
     padding: 10px 25px;
     border-radius: 7px;
-    font-size: 18px;
-    
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 }
 
 /* What we do */
@@ -55,20 +59,28 @@ section.what-we-do{
 }
 section.what-we-do h3.wwd{
     color: brown;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
 }
 
 section.what-we-do h1.wwd-head{
     margin: 0.8em 0;
-    font-size: 30px;
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 }
 section.what-we-do p.wwd-text{
-    font-size: 21px;
+    font-size: 16px;
     width: 400px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
 section.what-we-do article {
     margin: 2em 0 3em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    font-family: 'Roboto', sans-serif;
     gap: 2em;
 }
 section.what-we-do article div{
@@ -80,18 +92,22 @@ section.what-we-do article div img{
 }
 section.what-we-do article div h4{
     margin: 1em 0;
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: 400;
 }
 section.what-we-do article div p{
     margin-bottom: 0.7em;
-    font-size: 17px;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 section.what-we-do article div a{
     color: #000;
     text-decoration: none;
-    font-weight: 700;
+    
     font-style: italic;
+    font-weight: 600;
+    font-size: 12px;
 }
 section.what-we-do article div a::after{
     content: "";
@@ -101,7 +117,7 @@ section.what-we-do article div a::after{
     background-color: rgba(230, 60, 60,0.6);
     position: relative;
     bottom: -12px;
-    left: -80px;
+    left: -70px;
 }
    
         /* Looking for young talent */
@@ -110,15 +126,20 @@ section.what-we-do article div a::after{
         display: flex;
         align-items: center;
         margin-left: 6em;
+    font-family: 'Poppins', sans-serif;
+
    }     
    section.young-talent .yt-text {
     font-size: 21px;
     width: 420px;
+    font-weight: 400;
    }
    section.young-talent .yt-head{
     margin: 1em 0;
-
+    font-size: 36px;
+    font-weight: 700;
    }
    section.young-talent .send-mail{
-    font-size: 18px;
+    font-size: 24px;
+    font-weight: 400;
    }
