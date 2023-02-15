@@ -2,6 +2,9 @@
 body{
     overflow-x: hidden;
 }
+div.margin-specifier{
+    margin-left: 8.2em;
+}
 /* First section styling */
 section.first{
     background-image: url(/images/landingPage-bg.svg);
@@ -69,7 +72,7 @@ div.display-image img{
 /* second section styling */
 section.second {
     width: 80%;
-    margin: 6em auto 0;
+    margin-top: 6em  ;
     
 }
 section.second h3.wwa{
@@ -96,27 +99,53 @@ section.second p.desc-text{
 }
 
 section.second  .desc-images{
+
     /* display: flex;
     justify-content: space-between; */
     display: grid;
+    
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    width: 86%;
+    width: 92%;
 }
-
+section.second  .desc-images.inactive {
+    display: none;
+}
 section.second  .desc-images img{
     width: 170px;
     height: 180px;
     border-radius: 7px;
-    
+    cursor: pointer;
 }
 section.second  .desc-images .image.db img{
     height: 90px;
     
 }
+section.second .desc-images-full-view {
+    display: none;
+    margin: 0 auto;
+    width: inherit;
+    height: 60vh;
+    position: relative;
+} 
+section.second .desc-images-full-view.active{
+    display: block;
+}
+section.second .desc-images-full-view #pics{
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+}
+section.second .desc-images-full-view #close-btn{
+    position: absolute;
+    top: 30px;
+    cursor: pointer;
+    /* right: 30px; */
+}
+
 /* third section */
 
 section.third div.what_we_do{
-    margin: 3em 0 2em 7.7em;
+    margin: 3em 0 2em ;
     /* display: flex;
     justify-content: space-around; */
 }
@@ -138,7 +167,7 @@ section.third p.info-text{
 }
 section.third div.learn-more{
     width: 65%;
-    margin-left: 7.5em;
+    margin-left: 3.5em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
@@ -185,7 +214,7 @@ section.third div.learn-more article.item a:hover{
 
 section.fourth{
     width: 83%;
-    margin: 2em auto;
+    /* margin: 2em auto; */
 }
 section.fourth h3{
     color: brown;
@@ -208,6 +237,7 @@ section.fourth div.qualities{
     margin-top: 1.5em;
     display: flex;
     justify-content: space-around;
+    width: 90%;
 }
 section.fourth div.qualities img{
     background-color: lightgray;
@@ -224,8 +254,8 @@ section.fourth div.qualities p{
 section.fourth div.qualities span{
     position: relative;
     display: inline-block;
-    width: 170px;
-    left: -25px;
+    width: 200px;
+    left: -10px;
     font-family: 'Poppins', sans-serif;
 }
 /* Article break into tech */
@@ -280,7 +310,7 @@ article.break-into-tech div a{
 
 
 section.fifth{
-    margin: 3em 0 4em 4.5em;
+    margin: 3em 0 4em ;
     font-size: 18px;
 }
 section.fifth h3{
