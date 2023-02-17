@@ -84,13 +84,70 @@ section.our-team p.ot-info{
 }
 
 section.our-team article.members{
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 2em;
 }
 
-section.our-team article.members img{
+
+section.our-team article.members div.main{
+    width: 330px;
+    height: 290px;
+    box-shadow: 1px 1px 1px 1px grey;
+    padding:  15px;
+    text-align: center;
+    border-radius: 7px;
+    background-color: lightgrey;
+}
+/* section.our-team article.members div.on-hover{ */
+    /* width: 330px;
+    height: 280px; */
+    /* background-color: grey; */
+    /* display: flex;
+    box-shadow: none;
+    text-align: left;
+} */
+ 
+section.our-team article.members div.main img.main{
+    width: 80px;
+}
+section.our-team article.members div.main h3{
+    margin: 12px 0;
+    font-family: 'Poppins', sans-serif;
+}
+section.our-team article.members div.main h5{
+    font-family: 'Roboto', sans-serif;
+}
+section.our-team article.members div.main p{
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+div.on-hover{
+    width: 330px;
+    height: 280px;
+    box-shadow: none;
+    /* background-color: grey;  */
+    display: flex;
+} 
+div.on-hover img {
+    width: 170px;
+    height: 260px;
+}
+div.on-hover div{
+    margin-left: 1em;
+    font-family: 'Poppins', sans-serif;
+}
+div.on-hover h3{
+    margin: 1em 0;
+}
+div.on-hover div p{
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+/* section.our-team article.members img{
     height: 200px;
 }
 section.our-team article.members div.name-position{
@@ -101,14 +158,14 @@ section.our-team article.members div.name-position{
     position: relative;
     top: -2.5em;
     right: -2em;
-}
+} */
 
 /* Our Core Values */
 
 section.core-values{
     margin: 3em 0 2em 5em;
     position: relative;
-    top: -3em;
+    /* top: -3em; */
 }
 section.core-values h3.wdu{
     color: brown;

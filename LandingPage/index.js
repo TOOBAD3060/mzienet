@@ -1,7 +1,7 @@
 //  Getting elements
 
 const slicedText = document.getElementById("sliced-text")
-const descImgContainer = document.querySelector(".desc-images ")   //conatiner show all desc img
+const descImgContainer = document.querySelector(".desc-images")   //conatiner show all desc img
 const descImg = document.querySelectorAll(".desc-images img")
 const fullDescImgContainer = document.querySelector(".desc-images-full-view")  // container for full img (the clicked one)
 const fullDescImg = document.querySelector(".desc-images-full-view img")
