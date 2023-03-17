@@ -1,28 +1,41 @@
 body{
     overflow-x: hidden;
+    font-family: poppins;
 }
 
 section.co-working{
-    height: 70vh;
+    height: 73vh;
     background-image: url(/images/co-work.svg);
     background-repeat: no-repeat;
     background-size: cover;
     /* background-position: center; */
     padding: 3em 0 0 6em;
     position: relative;
-    /* z-index: -4; */
+    z-index: -4;
+    background-color:rgba(128, 128, 128, 0.386);
+    background-blend-mode: color-burn;
 }
 section.co-working::after{
     content: "";
     display: inline-block;
     width: 115%;
-    height: 70vh;
+    height: 73vh;
     position: relative;
     top: -2.9em;
     left: -6em;
     z-index: 0.5;
     overflow-x: hidden;
-    background-color: rgba(25, 160, 252,0.3);
+    background-color: rgba(25, 160, 252,0.5);
+    animation: moveup 2s ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes moveup {
+    0%{
+        top:-50px;
+    }
+    100%{
+        top: -530px;
+    }
 }
 section.co-working div.details{
     z-index: 10000;
@@ -52,6 +65,7 @@ section.co-working a.book-a-space{
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+    cursor: pointer;
 }
 
 /* Video Section */
@@ -88,7 +102,7 @@ section.video img#txt{
         /* Offers */
 
  section.offers{
-        margin: 3em 0 0 6em;
+        margin-top: 70px;
         height: 120vh;
         
     }
@@ -101,9 +115,9 @@ section.video img#txt{
     }
     section.offers h1{
         margin: 0.5em 0 1em;
-        font-weight: 400;
-        width: 500px;  
-        font-size: 35; 
+        font-weight: 390;
+        width: 80%;  
+        font-size: 35px; 
         font-family: 'Poppins', sans-serif;
     }
 
@@ -123,7 +137,7 @@ section.video img#txt{
         font-size: 19px;
         text-decoration: none;
         color: #000;
-        font-weight: 400;
+        font-weight: 300;
         font-family: 'Poppins', sans-serif;
     }
     section.offers  article.desk-img div.desk-text{
@@ -138,14 +152,16 @@ section.video img#txt{
             width: 600px;
             font-size: 14px;
             color: gray;
+            word-spacing: 2px;
             margin-top: 1em;
-            font-weight: 400;
-            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            font-family: 'poppins', sans-serif;
     }
 
             /* Dedicated desk rating */
     section.rating{
-        margin: 1em 0 3em 6em;
+        margin-top: 80px;
+        margin-bottom: 80px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 2em;
@@ -153,20 +169,21 @@ section.video img#txt{
 
     section.rating h3.rate{
         margin: 1em 0;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'poppins', sans-serif;
         font-weight: 400;
         font-size: 18px;
     }
     section.rating h3.rate + span{
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400;
+        font-family: 'poppins', sans-serif;
+        font-weight: 500;
         font-size: 14px;
     }
 
     /* Benefits */
     section.benefits{
         height: 200px;
-        margin: 1em 0 3em 6em;
+        margin-bottom: 30px;
+        margin-top: 60px;
     }
     section.benefits h2{
         margin-bottom: 1em;
@@ -177,15 +194,17 @@ section.video img#txt{
     section.benefits .innovative-img{
         display: flex;
         width: 90%;
+        justify-content: space-between;
+        margin-right: -105px;
     }
     section.benefits .innovative-img ul{
         width: 50%;
         /* list-style: none; */
         line-height: 30px;
         color: gray;
-        font-size: 16.5px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400;
+        font-size: 15px;
+        font-family: 'poppins', sans-serif;
+        font-weight: 300;
     }
     /* section.benefits .innovative-img article{
         width: 50%;
@@ -196,11 +215,12 @@ section.video img#txt{
         width: 500px;
         height: 220px;
         border-radius: 10px;
+        margin-right: -109px;
     }
         /* Gallery */
 
     section.gallery{
-        margin: 0 0 1em 6em;
+    
     }
     section.gallery h3{
         color: brown;
@@ -231,7 +251,7 @@ section.video img#txt{
         border-radius: 7px;
     }
     img#first{
-        width: 340px;
+        width: 380px;
     }
     section.gallery a.book-a-tour{
         color: #fff;

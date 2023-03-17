@@ -1,6 +1,6 @@
 /* Portfolio start */
 section.portfolio{
-    height: 70vh;
+    height: 73vh;
     background-image: url(/images/people.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -8,19 +8,31 @@ section.portfolio{
     padding: 3em 0 0 6em;
     position: relative;
     font-family: 'Poppins', sans-serif;
-    /* z-index: -4; */
+    background-color: rgba(128, 128, 128, 0.576);
+    background-blend-mode: color-burn ;
+    z-index: -4;
+    overflow-x: hidden;
 }
 section.portfolio::after{
     content: "";
-    display: inline-block;
-    width: 115%;
-    height: 70vh;
-    position: relative;
-    top: -2.9em;
-    left: -6em;
-    z-index: 0.5;
+    position: absolute;
+    width: 100%;
+    height: 73vh;
+    top: 0em;
+    left: 0em;
+    z-index: 1;
     overflow-x: hidden;
     background-color: rgba(55,215, 25,0.6);
+    animation: leftshow 2s ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes leftshow {
+    0%{
+        left: 0px;
+    }
+    100%{
+        left: 1500px;
+    }
 }
 section.portfolio div.details{
     z-index: 10000;
@@ -48,11 +60,12 @@ section.portfolio  a.get_started{
     border-radius: 7px;
     font-size: 20px;
     font-weight: 500;
+    cursor: pointer;
 }
 /* What we do */
 
 section.what-we-do{
-    margin: 3em 0 0 6em;
+    margin-top: 80px;
     font-family: 'Poppins', sans-serif;
 }
 section.what-we-do h3.wwd{
@@ -69,24 +82,24 @@ section.what-we-do h1.wwd-head{
 section.what-we-do p.wwd-text{
     font-size: 16px;
     width: 400px;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 /*  Project and Images */
 
 article.projects_and_images{
-    margin: 2em 0 0 6em;
     font-family: 'Poppins', sans-serif;
 }
 article.projects_and_images div.each-project{
     display: flex;
     height: 400px;
-    width: 90%;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
 }
 article.projects_and_images div.each-project div.text{
-    line-height: 25px;
+    /* line-height: 25px; */
+
 }
 article.projects_and_images div.each-project div.text h1{
     font-weight: 700;
@@ -94,31 +107,37 @@ article.projects_and_images div.each-project div.text h1{
 }
 article.projects_and_images div.each-project div.text h3{
     margin: 1em 0;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 16px;
 }
 article.projects_and_images div.each-project div.text p{
     font-size: 16px;
     margin-bottom: 2em;
     width: 500px;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 article.projects_and_images div.each-project div.text a{
-    background-color:gainsboro;
+    background-color:#fff;
     padding: 10px 25px;
     color: #000;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
     border-radius: 7px;
     transition: all 500ms;
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
+    font-family: poppins;
+    font-size: 15px;
+    border: 2px solid grey;
 }
 article.projects_and_images div.each-project div.text a:hover{
     background-color: gray;
-    font-size: 19px;
+    color: #fff;
 }
+article.projects_and_images div.each-project img{
+    border-radius: 10px;
+    width: 90%;
+}
+
 
 
     /* Looking for young talent */
@@ -126,21 +145,26 @@ article.projects_and_images div.each-project div.text a:hover{
         height: 200px;
         display: flex;
         align-items: center;
-        margin-left: 6em;
+        margin-left: -41em;
         font-family: 'Poppins', sans-serif;
    }     
    section.young-talent .yt-text {
-    font-size: 24px;
-    width: 420px;
-    font-weight: 400;
+    font-size: 20px;
+    width: 60%;
+    font-weight: 300;
+    margin-left: 17em;
    }
    section.young-talent .yt-head{
     margin: 1em 0;
     font-weight: 700;
-    font-size: 36px;
-
+    font-size: 30px;
+    font-family: poppins;
+    margin-left: 11em;
    }
    section.young-talent .send-mail{
-    font-size: 24px;
+    font-size: 23px;
     font-weight: 400;
+    font-family: poppins;
+    font-style: italic;
+    margin-left: 14.5em;
    }

@@ -1,29 +1,65 @@
 /* Service start */
 
+
+ body{
+    /* overflow-x:hidden; */
+ }
 section.services{
-    height: 70vh;
+    height: 73vh;
     background-image: url(/images/people.svg);
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-size: cover;
     background-position: center;
     padding: 3em 0 0 6em;
     position: relative;
     /* z-index: -4; */
+    background-color: rgba(128, 128, 128, 0.665);
+    background-blend-mode:color-burn;
+    overflow-x: hidden;
+}
+section.services::before{
+    content: "";
+    position:absolute;
+    width: 50%;
+    height: 73vh;
+    top: 0;
+    left: 0;
+    z-index: 2px;
+    background-color: rgba(230, 60, 60,0.7);
+    animation: width 2s ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes width {
+    0%{
+        left: 0px;
+    }
+    100%{
+        left: -730px;
+    }
 }
 section.services::after{
     content: "";
-    display: inline-block;
-    width: 115%;
-    height: 70vh;
-    position: relative;
-    top: -2.9em;
-    left: -6em;
-    z-index: 0.5;
-    overflow-x: hidden;
-    background-color: rgba(230, 60, 60,0.6);
+    position:absolute;
+    width: 50%;
+    height: 73vh;
+    top: 0;
+    right: 0;
+    z-index: 2px;
+    background-color: rgba(230, 60, 60,0.7);
+    animation: widthshow 2s ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes widthshow {
+    0%{
+        right: 0px;
+    }
+    100%{
+        right: -730px;
+ 
+    }
 }
 section.services div.details{
-    z-index: 10000;
+    z-index: 1;
     color: #fff;
     position: absolute;
 }
@@ -34,7 +70,7 @@ section.services h1.service-head{
         font-weight: 700;
 }
 section.services p.service-text{
-    margin: 1em  0 1.5em;
+    margin: 1em 0 1.5em;
     font-size: 24px;
     color: #fff;
     width: 800px;
@@ -55,36 +91,42 @@ section.services a.get_started{
 /* What we do */
 
 section.what-we-do{
-    margin: 3em 0 0 6em;
+    margin: 3em -3em 6em 8em;
 }
 section.what-we-do h3.wwd{
     color: brown;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: 800;
+    margin-left: -8em;
 }
 
 section.what-we-do h1.wwd-head{
-    margin: 0.8em 0;
+    margin-top: 40px;
     font-size: 36px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
+    margin-left: -3em;
 }
 section.what-we-do p.wwd-text{
     font-size: 16px;
-    width: 400px;
+    width: 60%;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    margin-left: -100px;
 }
 section.what-we-do article {
-    margin: 2em 0 3em;
+    /* margin: 2em 0 3em; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'poppins', sans-serif;
     gap: 2em;
+    margin-left: -100px;
+    margin-top: 30px;
 }
 section.what-we-do article div{
     width: 300px;
+    margin-top: 30px;
 }
 section.what-we-do article div img{
     background-color: rgba(230, 60, 60,0.3);
@@ -94,6 +136,7 @@ section.what-we-do article div h4{
     margin: 1em 0;
     font-size: 24px;
     font-weight: 400;
+    font-family: poppins;
 }
 section.what-we-do article div p{
     margin-bottom: 0.7em;
@@ -125,14 +168,15 @@ section.what-we-do article div a::after{
         height: 200px;
         display: flex;
         align-items: center;
-        margin-left: 6em;
     font-family: 'Poppins', sans-serif;
+    margin-left: 1em;
 
    }     
    section.young-talent .yt-text {
     font-size: 21px;
-    width: 420px;
-    font-weight: 400;
+    width: 60%;
+    font-weight: 300;
+    font-family: poppins;
    }
    section.young-talent .yt-head{
     margin: 1em 0;
@@ -141,5 +185,6 @@ section.what-we-do article div a::after{
    }
    section.young-talent .send-mail{
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 300;
+    font-style: italic;
    }

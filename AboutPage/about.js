@@ -1,4 +1,3 @@
-//  =   "
 
 const initialMembersRecord = [
     {
@@ -145,12 +144,7 @@ const activeMember = document.querySelector("div.on-hover")
 
 // =      "
 
-const initialValue = `<img class="main" src="/images/member.svg" alt="" >
-<h3>Name</h3>
-<h5>Position</h5>
-<p>Lorem ipsum dolor sit amet consectetur, 
-    adipisicing elit. Itaque, repellendus.
-</p>
+const initialValue = `
 `
 
 const yes = initialMembersRecord.map((member,index)=>{
