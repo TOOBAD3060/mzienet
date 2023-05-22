@@ -55,38 +55,103 @@ const picArr = [
   '/images/seven.JPG',
 ];
 
-let newSrc;
+
+let theFullImg = fullDescImg.getAttribute('src');
+let newSrc = picArr.indexOf(theFullImg);
+let number = 0;
+
+
+
 
 leftBtn.addEventListener('click', () => {
-  for (i = 0; i < picArr.length; i++) {
-    currentFullImg = fullDescImg.getAttribute('src');
+ 
+    
+    
+    if(newSrc === 0){
+      newSrc = picArr.length - 1;
+    fullDescImg.setAttribute('src', picArr[newSrc]);
 
-    if (currentFullImg == picArr[i]) {
-      if (i == 0) {
-        newSrc = picArr.length - 1;
-      } else {
-        newSrc = i - 1;
-      }
-
+    }
+    else{
+      newSrc--; 
       fullDescImg.setAttribute('src', picArr[newSrc]);
     }
+    
+    console.log(newSrc);
   }
-});
+  
+);
 
 rightBtn.addEventListener('click', () => {
+ 
+  
+  if(newSrc === picArr.length - 1 ){
+  newSrc = 0; 
+  fullDescImg.setAttribute('src', picArr[newSrc]);
 
-    for (i = 0; i < picArr.length; i++) {
-        currentFullImg = fullDescImg.getAttribute('src');
+  }
+  else{
+    newSrc++ ;
+     fullDescImg.setAttribute('src', picArr[newSrc]);
+  }
+ 
+  console.log(newSrc);
 
-        if (currentFullImg == picArr[i]) {
-        if (i < picArr.length - 1) {
-            newSrc = i - 1;
-        } else {
-            newSrc == i - 1;
-        }
-        fullDescImg.setAttribute('src', picArr[newSrc]);
-        }
-    }
-});
+}
+);
+
+
+
+
+// rightBtn.addEventListener('click', () => {
+
+//     for (i = 0; i < picArr.length; i++) {
+//         currentFullImg = fullDescImg.getAttribute('src');
+
+//         if (currentFullImg == picArr[i]) {
+//         if (i > picArr.length - 1) {
+//             newSrc = 0;
+//         } else {
+//             newSrc == i + 1;
+//         }
+//         fullDescImg.setAttribute('src', picArr[newSrc]);
+//         }
+//         console.log(i);
+//     }
+// });
+
+
+// leftBtn.addEventListener('click', () => {
+//   for (i = 0; i < picArr.length; i++) {
+//     currentFullImg = fullDescImg.getAttribute('src');
+
+//     if (currentFullImg == picArr[i]) {
+//       if (i == 0) {
+//         newSrc = picArr.length - 1;
+//       } else {
+//         newSrc = i - 1;
+//       }
+
+//       fullDescImg.setAttribute('src', picArr[newSrc]);
+//     }
+//   }
+// });
+
+// rightBtn.addEventListener('click', () => {
+
+//     for (i = 0; i < picArr.length; i++) {
+//         currentFullImg = fullDescImg.getAttribute('src');
+
+//         if (currentFullImg == picArr[i]) {
+//         if (i > picArr.length - 1) {
+//             newSrc = 0;
+//         } else {
+//             newSrc == i + 1;
+//         }
+//         fullDescImg.setAttribute('src', picArr[newSrc]);
+//         }
+//     }
+// });
+
 
 
