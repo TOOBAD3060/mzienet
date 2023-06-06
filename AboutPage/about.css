@@ -9,9 +9,10 @@ section.about{
     background-size: cover;
     height: 73vh;
     color: #fff;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     background-position-y: 50%;
 }
+
 
 section.about h1.about-us{
     font-family: 'Poppins', sans-serif;
@@ -22,7 +23,7 @@ section.about h1.about-us{
     animation: animatezoom 1s;
   }
   
-  @-webkit-keyframes animatezoom {
+  @keyframes animatezoom {
     from {
       -webkit-transform: scale(0);
     }
@@ -91,7 +92,7 @@ article.display_images img#second{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2 1fr);
     width: 70%;
-    margin: 50px auto 60px;
+    /* margin: 50px auto 60px; */
     gap: 7px;
 
 }
@@ -165,7 +166,7 @@ article.display_images img#second{
 /* Our Core Values */
 
 section.core-values{
-    margin: 3em 0 2em 7em;
+    /* margin: 3em 0 2em 7em; */
     position: relative;
     height: 100vh;
     /* top: -3em; */
@@ -213,7 +214,7 @@ section.core-values article.values-display div p.each-value + span{
 /* Members -- Our team */
 
 section.our-team{
-    margin-left: 7em;
+    /* margin-left: 7em; */
     position: relative;
     top: -6em;
 }
@@ -329,7 +330,7 @@ section.our-team article.members div.name-position{
 /* Mail Section */
 
 article.mail-section{
-    margin: 2em 10em 2em 8em ;
+    /* margin: 2em 10em 2em 8em ; */
     font-family: 'Poppins', sans-serif;
 }
 article.mail-section p.mail-text{
@@ -359,3 +360,245 @@ div.full-width-image{
 footer.about-footer .footer-contents{
     margin-top: 0;
 }
+@media screen and (max-width:1024px) {
+    section.about{
+        height: 50vh;
+    }
+   .vision-mission{
+        margin: 10px;
+    }
+
+   section.about h1.about-us{
+    font-size: 500%;
+   }
+   section.about article.display_images{
+    margin-left: -100%;
+   }
+    section.vision-mission{
+    width: 50%;
+    margin-left: 10%;
+     }
+     .vision-mission-contents:nth-child(1){
+        width: 437.93px;
+       height: 250.05px;
+       font-size: 75%;
+    }
+    .vision-mission-contents:nth-child(1) img {
+        width: 30.59px;
+       height: 30.59px;
+    }
+    .vision-mission-contents:nth-child(1) h3{
+        font-size: 29px;
+    }
+      .vision-mission-contents:nth-child(1) p{
+            width: 60%;
+      }
+      
+      .vision-mission-contents:nth-child(2) img {
+        width: 390.31px;
+        height: 250.05px;
+        
+         }
+           .vision-mission-contents:nth-child(3) img {
+        width: 420.31px;
+        height: 294.05px;
+           }
+        .vision-mission-contents:nth-child(4){
+                width:367.93px;
+                margin-left: 10px;
+                font-size: 80%;
+
+         }
+    section.core-values article.values-display{
+       grid-template-columns: repeat(2,1fr);
+    }
+    section.core-values article.values-display{
+       width: 180px;
+    }
+    section.our-team article.members div.main{
+       width: 200px;
+    }
+    .vision-mission-contents:nth-child(1) p{
+       font-size: 150%;
+    }
+    .vision-mission-contents:nth-child(4) p{
+       font-size: 150%;
+    }
+    section.our-team{
+       margin-top: 100px;
+    }
+   section.about p.about-text{
+    font-size: 18px;
+    width: 70%;
+   }
+}
+
+   @media screen and (max-width:768px) {
+    body{
+        overflow-x: hidden;
+    }
+    section.about{
+      max-width: var(--margin-mobile);
+    }
+    section.about h1.about-us{
+       font-size: 300%;
+    } 
+    section.about h3.about-intro{
+        font-size: 200%;
+    }
+    section.about p.about-text{
+        font-size: 100%;
+    }
+    article.display_images{
+        display: flex;
+        width: 100%;
+    }
+    article.display_images img{
+        width: 200%;
+    }
+    article.display_images img#first{
+        margin-right: -50%;
+    }
+    section.vision-mission{
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+        margin-top: -40px;
+    }
+    .vision-mission-contents:nth-child(1){
+        width: 80%;
+    }
+    .vision-mission-contents:nth-child(2) img{
+        display:none;
+    }
+    .vision-mission-contents:nth-child(4){
+        width: 80%;
+    }
+    .vision-mission-contents:nth-child(3) img{
+       display: none;
+    }
+    section.core-values h3.wdu{
+        text-align: center;
+        font-size: 170%;
+    }
+    section.core-values article.values-display{
+        display: block;
+        width: 100%;
+    }
+    section.core-values article.values-display div{
+        width: 80%;
+        margin-top: 9%;
+    }
+    section.our-team{
+        margin-top: 110%;
+    }
+    section.our-team p.ot-info{
+        font-size: 100%;
+    }
+    section.our-team article.members{
+        grid-template-columns: repeat(3,1fr);
+        margin-left: 1em;
+    }
+    section.our-team article.members div.main{
+        margin-bottom: 20%;
+        height: 50vh;
+    }
+    section.our-team article.members div.main.on-hover{
+        width: 110%;
+    }
+    div.on-hover img{
+        width: 70%;
+    }
+    div.on-hover div{
+        margin-left: -0.1em;
+    }
+    article.mail-section p.mail-text{
+        width: 70%;
+    }
+    footer.about-footer{
+        width: var(--margin-mobile);
+    }
+   }
+   @media screen and (max-width:425px){
+    section.about h1.about-us{
+        font-size: 200%;
+        margin-left: -30%;
+    }
+    section.about h3.about-intro{
+        font-size: 100%;
+        margin-top: 40px;
+        margin-left: -30%;
+    }
+    section.about p.about-text{
+        font-size: 60%;
+        width: 100%;
+        margin-left: -30%;
+    }
+    article.display_images{
+        margin-top: 50%;
+        margin-left: -11%;
+        margin-right: 30%;
+        gap: 20px;
+    }
+    section.vision-mission{
+        margin-top: -40%;
+    }
+    .vision-mission-contents:nth-child(1){
+        font-size: 50%;
+    }
+    .vision-mission-contents:nth-child(4){
+        font-size: 50%;
+    }
+    section.core-values h3.wdu{
+        font-size: 130%;
+        margin-left: -30%;
+    }
+    section.core-values h1.ocv{
+        font-size: 100%;
+        margin-left: 10%;
+    }
+    section.core-values article.values-display{
+        margin-left: 10%;
+    }
+    section.core-values article.values-display div p.each-value{
+        font-size: 100%;
+    }
+    section.core-values article.values-display div p.each-value + span{
+        font-size: 70%;
+    }
+    section.our-team{
+        margin-top: 160%;
+    }
+    section.our-team h1.ot-header{
+        font-size: 150%;
+        margin-left: 20%;
+    }
+    section.our-team p.ot-info{
+        margin-left: 10%;
+        font-size: 80%;
+        line-height: 170%;
+        width: 90%;
+    }
+    section.our-team article.members{
+        display: block;
+        margin-left: 7%;
+        margin-bottom: 2%;
+    }
+    section.our-team article.members div.main{
+        width: 100%;
+        height: 50vh;
+    }
+
+    section.our-team article.members div.main.member-mobile-absent{
+        display: none;
+    }
+    
+
+    article.mail-section{
+        width: 100%;
+        margin-left: 7%;
+    }
+    section.our-team article.members div.main.on-hover{
+        width: 100%;
+    }
+
+   }

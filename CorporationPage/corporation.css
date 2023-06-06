@@ -1,23 +1,15 @@
-
 /*      Section start */
 section.start{
-    margin: 2em 0 3em;
-    height: 73vh;
     background-image: url(/images/displayImage.svg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    margin-top: -10px;
     background-color: rgba(128, 128, 128, 0.585);
     background-blend-mode:color-burn;
+    padding: 4em 0 7em;
+    
     }
-section.start article{
-    /* background-color: rgba(255, 180, 37, 1); */
-    height: 60vh;
-    width: 45%;
-    /* text-align: center; */
-    /* padding: 0 0 0 3em; */
-}
+
 section.start::after{
     content: "";
     display: inline-block;
@@ -40,25 +32,19 @@ section.start::after{
     }
 }
 section.start article h1{
-    position: absolute;
-    z-index: 10;
+    /* z-index: 10; */
     color: #fff;
     font-size: 70px;
     font-family: Poppins;
     font-weight: 700;
-    margin-top: 20px;
-    /* color: #e85353; */
     width: 50%;
-    /* margin: 0 3em 0; */
 }
 
 section.start article p{
-    position: absolute;
-    z-index: 10;
     overflow: hidden;
+    margin: 0.5em 0 2em;
     color: #fff;
     font-size: 21px;
-    margin: 11em 0 0;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     width: 50%;
@@ -66,53 +52,45 @@ section.start article p{
 }
 section.start  article a.getStarted{
     color: #fff;
-    position: absolute;
-    z-index: 10;
+    /* z-index: 10; */
     background-color: brown;
     padding: 12px 25px;
     border-radius: 7px;
     text-decoration: none;
     font-size: 19px;
     font-weight: 500;
-    /* top: 300px; */
     font-family: 'Poppins', sans-serif;
-    margin: 18em 0 0;
 }
+
 
 /* Our focus */
 
-section .our-focus{
-    /* margin-left: 3em; */
-}
-section .our-focus h3.o-f{
+section.our-focus h3.o-f{
     color: brown;
     font-size: 14px;
     font-weight: 800;
     font-family: Poppins;
 }
-section .our-focus div.wwd{
+section.our-focus div.wwd{
     display: flex;
     justify-content: space-between;
-    height: 70px;
+    height: 40px;
     align-items: center;
-    width: 80%;
+    /* width: 80%; */
     font-size: 35px;
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
 }
 section.our-focus h1.wwd{
-    /* margin: 0.3em 0 1em; */
     font-size: 30px;
 }
 
 section.our-focus div.lists{
     display: flex;
-    width: 80%;
-    height: 33vh;
+    /* width: 80%; */
     align-items: center;
     justify-content: space-around;
-    margin-left: 60px;
-    
+    padding: 2em 0;    
 }
 
 /* Handle all images with class of top  */
@@ -132,12 +110,12 @@ section.our-focus div.lists article p.each-info{
         font-weight: 400;
         font-size: 14px;
         font-family: 'poppins', sans-serif;
+        padding-right: 1rem;
 }
 
 /* get involved */
 
 section.get-involved{
-    /* margin: 0 0 4em 3em; */
     font-family: poppins;
 }
 section.get-involved h3.gi{
@@ -149,26 +127,21 @@ section.get-involved h3.gi{
 section.get-involved div.giig{
     display: flex;
     justify-content: space-between;
-    height: 70px;
     align-items: center;
-    width: 90%;
     font-size: 35px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
+    
 }
 section.get-involved h1.giig{
-    /* margin: 0.3em 0 1em; */
     font-size: 30px;
 }
 
 section.get-involved div.growth{
     display: flex;
-    width: 90%;
-    height: 33vh;
     align-items: center;
     font-family: poppins;
-    /* justify-content: space-between; */
-    margin-left: 40px;
+    padding: 3.5em 0;
 }
 
 section.get-involved div.growth article h4.each{
@@ -182,8 +155,10 @@ section.get-involved div.growth article p.each-info{
         color: gray;   
         font-weight: 400;
         margin-bottom: 0.5em;
-        font-family: poppins;
+        font-family: 'Poppins', sans-serif;
         font-size: 14px;
+        padding-right: 1rem;
+        
 }
 section.get-involved div.growth article a{
     text-decoration: none;
@@ -196,9 +171,7 @@ section.get-involved div.growth article a{
 /*  broad explanation  */
 
 section.trainings,section.consultancy,section.data-services {
-    /* margin: 0 0 0 3em; */
-    height: 65vh;
-    margin-top: 20px;
+    padding: 2em 0 1em;
     
 }
 
@@ -215,8 +188,6 @@ section.trainings p, section.consultancy p, section.data-services p{
     color: grey;
     font-family: poppins;
     font-weight: 400;
-    margin-bottom: 20px;
-    margin-left: 20px;  
 }
 section div.image{
     margin: 1em 0;
@@ -225,7 +196,7 @@ section div.image{
 section div.image img{
     width: 100%;
     height: 167px;
-    margin: 20px 0px 20px;
+    /* margin: 20px 0px 20px; */
 }
 
 section div.gt{
@@ -242,4 +213,108 @@ section div.gt a{
     background-color: #BE181A;
     border-radius: 6px;
     cursor: pointer;
+}
+
+
+/* Tablet Design */
+@media (max-width:777px){
+    section.start{
+        height: 53vh;
+        
+    }
+   
+    section.start article h1{
+        position: relative;
+        width: 350px;
+        font-size: 34px;
+        line-height: 45px;
+    }
+    
+    section.start article p{
+        position: relative;
+        font-size: 18px;
+        margin: 1em 0 3em;
+        width: 350px;
+        
+    }
+    section.start  article a.getStarted{
+        position: relative;
+        padding: 10px 12px;
+        border-radius: 5px;
+        font-size: 14px
+    
+    }
+    /* Our focus */
+img.mobile-absent{
+    display: none;
+}
+section.our-focus h1.wwd{
+    font-size: 22px;
+}
+
+section.our-focus div.lists{
+    display: grid;
+    /* width: 80%; */
+    height: 75vh;
+    align-items: center;
+    justify-content: space-around;
+        
+}
+
+/* get involved */
+
+section.get-involved{
+    margin-top: 1.5em;
+}
+section.get-involved h1.giig{
+    font-size: 20px;
+}
+
+section.get-involved div.growth{
+    display: grid;
+    height: 90vh;
+}
+
+/*  broad explanation  */
+
+/* section.trainings,section.consultancy,section.data-services { */
+    /* height: 70vh; */
+/* } */
+
+/* broad explanation on Training */
+section.trainings h3, section.consultancy h3, section.data-services h3{
+    font-size: 18px;
+}
+section.trainings p, section.consultancy p, section.data-services p{
+    line-height: 20px;
+    margin-bottom: 0px;
+    margin-left: 0px;  
+}
+section div.image{
+    margin: 1em 0;
+    width: 100%;
+}
+section div.image img{
+    width: 100%;
+    height: 167px;
+    margin: 0;
+}
+
+section div.gt{
+        text-align: center;
+        width: 100%;
+}
+
+section div.gt a{
+    padding: 7px  7px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    background-color: #BE181A;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
 }

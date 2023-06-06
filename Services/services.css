@@ -1,18 +1,9 @@
-/* Service start */
-
-
- body{
-    /* overflow-x:hidden; */
- }
 section.services{
-    height: 73vh;
     background-image: url(/images/people.svg);
-    /* background-repeat: no-repeat; */
     background-size: cover;
     background-position: center;
-    padding: 3em 0 0 6em;
+    padding: 4em 0 7em;
     position: relative;
-    /* z-index: -4; */
     background-color: rgba(128, 128, 128, 0.665);
     background-blend-mode:color-burn;
     overflow-x: hidden;
@@ -61,7 +52,6 @@ section.services::after{
 section.services div.details{
     z-index: 1;
     color: #fff;
-    position: absolute;
 }
 section.services h1.service-head{
         color: #fff;
@@ -90,38 +80,33 @@ section.services a.get_started{
 
 /* What we do */
 
-section.what-we-do{
+/* section.what-we-do{
     margin: 3em -3em 6em 8em;
-}
+} */
 section.what-we-do h3.wwd{
     color: brown;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: 800;
-    margin-left: -8em;
 }
 
 section.what-we-do h1.wwd-head{
-    margin-top: 40px;
+    margin: 0.3em 0;
     font-size: 36px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    margin-left: -3em;
 }
 section.what-we-do p.wwd-text{
     font-size: 16px;
     width: 60%;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    margin-left: -100px;
 }
 section.what-we-do article {
-    /* margin: 2em 0 3em; */
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     font-family: 'poppins', sans-serif;
     gap: 2em;
-    margin-left: -100px;
     margin-top: 30px;
 }
 section.what-we-do article div{
@@ -165,12 +150,8 @@ section.what-we-do article div a::after{
    
         /* Looking for young talent */
    section.young-talent{
-        height: 200px;
-        display: flex;
-        align-items: center;
-    font-family: 'Poppins', sans-serif;
-    margin-left: 1em;
-
+        font-family: 'Poppins', sans-serif;
+        padding: 3em 0;
    }     
    section.young-talent .yt-text {
     font-size: 21px;
@@ -179,7 +160,7 @@ section.what-we-do article div a::after{
     font-family: poppins;
    }
    section.young-talent .yt-head{
-    margin: 1em 0;
+    margin: 0.1em 0;
     font-size: 36px;
     font-weight: 700;
    }
@@ -187,4 +168,55 @@ section.what-we-do article div a::after{
     font-size: 24px;
     font-weight: 300;
     font-style: italic;
+   }
+
+
+   /* Design for tablet */
+   @media (max-width:1000px) {
+   
+    section.services h1.service-head{
+            font-size: 34px;
+    }
+    section.services p.service-text{
+        margin: 2em 0 3em;
+        font-size: 17px;
+        width: 300px;
+        line-height: 20px;
+    }
+    section.services a.get_started{
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: 14px
+    }
+    
+    }
+
+ @media (max-width:720px) {
+   
+section.what-we-do h1.wwd-head{
+    font-size: 22px;
+}
+  }
+
+@media (max-width:500px) {
+       
+    section.services a.get_started{
+        padding: 5px 15px;
+        border-radius: 5px;
+        font-size: 14px
+    }
+        
+        
+   section.young-talent .yt-text {
+    font-size: 18px;
+   }
+   section.young-talent .yt-head{
+    font-size: 22px;
+   }
+   section.young-talent .send-mail{
+    font-size: 21px;
+    font-weight: 300;
+    font-style: italic;
+   }
+
    }
