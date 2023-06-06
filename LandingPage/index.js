@@ -6,6 +6,10 @@ const descImg = document.querySelectorAll('.desc-images img');
 const fullDescImgContainer = document.querySelector('.desc-images-full-view'); // container for full img (the clicked one)
 const fullDescImg = document.querySelector('.desc-images-full-view img');
 const imgCloseBtn = document.querySelector('.desc-images-full-view #close-btn');
+const mobileDescImage = document.querySelector('.mobile-desc-img img');
+const mobileLeftBtn = document.querySelector('.mobile-desc-img .bx.bx-chevron-left'),
+      mobileRightBtn = document.querySelector('.mobile-desc-img .bx.bx-chevron-right');
+
 
 const leftBtn = document.querySelector('.bx.bx-chevron-left'),
   rightBtn = document.querySelector('.bx.bx-chevron-right');
@@ -22,7 +26,7 @@ function slicer() {
   setTimeout(slicer, 100);
 }
 
-
+// Large SCreen Desc Img Implementation
 let currentFullImg = '';
 
 descImg.forEach((item, index) => {
@@ -100,58 +104,36 @@ rightBtn.addEventListener('click', () => {
 }
 );
 
+// Mobile Desc Img Implementation
 
+let currentMobile = 0;
 
+function prevImg () {
+  if(currentMobile === 0){
+    currentMobile = picArr.length - 1;
+  mobileDescImage.src = picArr[currentMobile]
+  }
+  else{
+    currentMobile--; 
+    mobileDescImage.src = picArr[currentMobile]
+  }
+  
+  
+}
 
-// rightBtn.addEventListener('click', () => {
+mobileLeftBtn.addEventListener('click',prevImg)
 
-//     for (i = 0; i < picArr.length; i++) {
-//         currentFullImg = fullDescImg.getAttribute('src');
+function nextImg () {
+  if(currentMobile === picArr.length - 1 ){
+    currentMobile = 0; 
+    mobileDescImage.src = picArr[currentMobile]
+    
+    }
+    else{
+      currentMobile++ ;
+      mobileDescImage.src = picArr[currentMobile]
+    }
+   
+  }
 
-//         if (currentFullImg == picArr[i]) {
-//         if (i > picArr.length - 1) {
-//             newSrc = 0;
-//         } else {
-//             newSrc == i + 1;
-//         }
-//         fullDescImg.setAttribute('src', picArr[newSrc]);
-//         }
-//         console.log(i);
-//     }
-// });
-
-
-// leftBtn.addEventListener('click', () => {
-//   for (i = 0; i < picArr.length; i++) {
-//     currentFullImg = fullDescImg.getAttribute('src');
-
-//     if (currentFullImg == picArr[i]) {
-//       if (i == 0) {
-//         newSrc = picArr.length - 1;
-//       } else {
-//         newSrc = i - 1;
-//       }
-
-//       fullDescImg.setAttribute('src', picArr[newSrc]);
-//     }
-//   }
-// });
-
-// rightBtn.addEventListener('click', () => {
-
-//     for (i = 0; i < picArr.length; i++) {
-//         currentFullImg = fullDescImg.getAttribute('src');
-
-//         if (currentFullImg == picArr[i]) {
-//         if (i > picArr.length - 1) {
-//             newSrc = 0;
-//         } else {
-//             newSrc == i + 1;
-//         }
-//         fullDescImg.setAttribute('src', picArr[newSrc]);
-//         }
-//     }
-// });
-
-
-
+  mobileRightBtn.addEventListener('click',nextImg)
