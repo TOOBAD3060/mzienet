@@ -9,10 +9,26 @@ section.about{
     background-size: cover;
     height: 73vh;
     color: #fff;
-    /* margin: 0 auto; */
     background-position-y: 50%;
 }
 
+.landing-mobile-css1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.landing-mobile-css1 h2.logo{
+    margin-top: 5px;
+    margin-left:-30px;
+}
+.landing-mobile-css1 h2{
+    margin-top: 20px;
+    margin-left: 150px;
+}
+.landing-mobile-css1 ul {
+    margin-left: 100px;
+    margin-top: 27px;
+}
 
 section.about h1.about-us{
     font-family: 'Poppins', sans-serif;
@@ -42,7 +58,6 @@ section.about h3.about-intro{
     
 }
 section.about p.about-text{
-    /* margin: 3em 0; */
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-weight: 700;
@@ -54,22 +69,13 @@ section.about p.about-text{
 /* Display Images */ 
 
 article.display_images{
-    /* display: flex;
-    justify-content: space-evenly; */
-    width: 78%;
-    
+      width: 78%;
     height: 150px;
     margin: 6.5em 0px  0 auto;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-items: center;
-    align-content: center;
-    background-color: red; */
-} 
+    } 
+
  article.display_images img{
     position: relative;
-    /* width: 180px;
-    height: 300px; */
     border-radius: 70px;
     top: -11em;
 }
@@ -77,22 +83,14 @@ article.display_images img#second{
     position: relative;
     right: -50px;
 }
-/*article.display_images .double img{
-    height: 100px;
-    width: 150px;
-    border-radius: 50%;
-    border-bottom-right-radius: 7px  ;
 
-} */
-
-    /* Vision and Mission */
+/* Vision and Mission */
 
 .vision-mission{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2 1fr);
     width: 70%;
-    /* margin: 50px auto 60px; */
     gap: 7px;
 
 }
@@ -127,12 +125,10 @@ article.display_images img#second{
 .vision-mission-contents:nth-child(2) img {
     width: 420.31px;
     height: 294.05px;
-    /* left: 558.69px; */
 }
 .vision-mission-contents:nth-child(3) img {
     width: 420.31px;
     height: 294.05px;
-    /* left: 558.69px; */
 }
 .vision-mission-contents:nth-child(4){
     background-color: #BE181A;
@@ -166,10 +162,8 @@ article.display_images img#second{
 /* Our Core Values */
 
 section.core-values{
-    /* margin: 3em 0 2em 7em; */
     position: relative;
     height: 100vh;
-    /* top: -3em; */
 }
 section.core-values h3.wdu{
     color: brown;
@@ -214,7 +208,6 @@ section.core-values article.values-display div p.each-value + span{
 /* Members -- Our team */
 
 section.our-team{
-    /* margin-left: 7em; */
     position: relative;
     top: -6em;
 }
@@ -250,16 +243,7 @@ section.our-team article.members div.main{
     padding:  15px;
     text-align: center;
     border-radius: 7px;
-    /* background-color: lightgrey; */
 }
-/* section.our-team article.members div.on-hover{ */
-    /* width: 330px;
-    height: 280px; */
-    /* background-color: grey; */
-    /* display: flex;
-    box-shadow: none;
-    text-align: left;
-} */
  
 section.our-team article.members div.main img.main{
     width: 80px;
@@ -286,12 +270,11 @@ section.our-team article.members div.main p{
 section.our-team article.members div.main.on-hover{
     width: 350px;
     height: 280px;
-    /* box-shadow: none; */
     display: flex;
-  -webkit-animation: animatezoom 0.1s;
-  animation: animatezoom 0.05s;
-  box-shadow: 2px 2px 5px;
-border: 2px solid rgba(0, 0, 0, 0.093);
+    -webkit-animation: animatezoom 0.1s;
+     animation: animatezoom 0.1s;
+     box-shadow: 2px 2px 5px;
+    border: 2px solid rgba(0, 0, 0, 0.093);
 }
 div.on-hover img {
     width: 190px;
@@ -312,25 +295,10 @@ section.our-team article.members div.main.on-hover h3{
 }
 .main.on-hover div p{
     font-family: 'Inter', sans-serif;
-    /* color: #fff; */
 }
-/* section.our-team article.members img{
-    height: 200px;
-}
-section.our-team article.members div.name-position{
-    width: 100px;
-    text-align: center;
-    background-color: gray;
-    border-radius: 20px;
-    position: relative;
-    top: -2.5em;
-    right: -2em;
-} */
 
 /* Mail Section */
-
 article.mail-section{
-    /* margin: 2em 10em 2em 8em ; */
     font-family: 'Poppins', sans-serif;
 }
 article.mail-section p.mail-text{
@@ -361,6 +329,18 @@ footer.about-footer .footer-contents{
     margin-top: 0;
 }
 @media screen and (max-width:1024px) {
+    .landing-mobile-css1 h2.logo{
+        margin-top: 5px;
+        margin-left:40px;
+    }
+    .landing-mobile-css1 h2{
+        margin-top: 20px;
+        margin-left: 150px;
+    }
+    .landing-mobile-css1 ul {
+        margin-left: 90px;
+        margin-top: 27px;
+    }
     section.about{
         height: 50vh;
     }
@@ -434,7 +414,23 @@ footer.about-footer .footer-contents{
 }
 
    @media screen and (max-width:768px) {
+    html{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .landing-mobile-css1{
+        display: flex;
+        position: fixed;
+        background-color: #fff;
+        justify-content: space-between;
+        width: 99.9%;
+    }
+    .landing-mobile-css1 h2.logo{
+    margin-top: 10px;
+    margin-left: 45px;
+  }
     body{
+        width: 100%;
         overflow-x: hidden;
     }
     section.about{
@@ -519,6 +515,20 @@ footer.about-footer .footer-contents{
     }
    }
    @media screen and (max-width:425px){
+    html{
+        width: 100%;
+        overflow-x:hidden;   
+      }
+    body{
+        overflow-x: hidden;
+        width:100%;
+    }
+    .landing-mobile-css1{
+        width: 100%;
+    }
+    section.about{
+        height: 40vh;
+    }
     section.about h1.about-us{
         font-size: 200%;
         margin-left: -30%;
@@ -529,7 +539,7 @@ footer.about-footer .footer-contents{
         margin-left: -30%;
     }
     section.about p.about-text{
-        font-size: 60%;
+        font-size: 80%;
         width: 100%;
         margin-left: -30%;
     }
@@ -542,11 +552,30 @@ footer.about-footer .footer-contents{
     section.vision-mission{
         margin-top: -40%;
     }
+    .vision-mission-contents:nth-child(1) h3{
+        font-size: 300%;
+        font-weight: 300;
+        margin-bottom: 10%;
+    }
+
     .vision-mission-contents:nth-child(1){
-        font-size: 50%;
+        font-size: 40%;
+        line-height: 250%;
+        margin-left: 2.5%;
+    }
+    .vision-mission-contents:nth-child(4) h3{
+        font-size: 300%;
+        font-weight: 300;
+        margin-bottom: 10%;
     }
     .vision-mission-contents:nth-child(4){
-        font-size: 50%;
+        font-size: 40%;
+        line-height: 250%;
+        margin-left: 2.5%;
+    }
+    section.core-values{
+        height: 100vh;
+        margin-bottom: 50%;
     }
     section.core-values h3.wdu{
         font-size: 130%;
@@ -566,7 +595,7 @@ footer.about-footer .footer-contents{
         font-size: 70%;
     }
     section.our-team{
-        margin-top: 160%;
+        margin-top: 100%;
     }
     section.our-team h1.ot-header{
         font-size: 150%;

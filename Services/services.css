@@ -199,14 +199,19 @@ section.what-we-do h1.wwd-head{
   }
 
 @media (max-width:500px) {
-       
+    section.services{
+      height: 50vh;
+      overflow-y: hidden;
+     }
+
+    section.services p.service-text{
+        overflow-y: hidden;
+    }
     section.services a.get_started{
         padding: 5px 15px;
         border-radius: 5px;
         font-size: 14px
     }
-        
-        
    section.young-talent .yt-text {
     font-size: 18px;
    }

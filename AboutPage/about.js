@@ -1,7 +1,4 @@
-const hamburger = document.querySelector('.hamburger')
-const menu_start = document.querySelector('#menu');
-const menu_close = document.querySelector('#menu-close');
-const hamburger_child = document.querySelector('.drop-down');
+
 const initialMembersRecord = [
     {
     image : "/images/member.svg",
@@ -145,27 +142,12 @@ const allMembers = document.querySelectorAll("article.members div")
 const allMemberContainer = document.querySelectorAll("section.our-team article.members div")
 const activeMember = document.querySelector("div.on-hover")
 
-// =      "
-
 const initialValue = `
 `
 
 const yes = initialMembersRecord.map((member,index)=>{
     return initialValue
 })
-
-
-// allMemberContainer
-
-// const currentMouseOver = `<img src= ${membersRecord[1].image}  alt="">
-// <div> 
-//    <h3>About me</h3>
-//    <p>${membersRecord[2].aboutMe} </p>
-//    <h3>Hobbies</h3>
-//    <p>${membersRecord[2].hobbies} </p>
-// </div>`
-// activeMember.innerHTML = currentMouseOver;
-
 
 allMemberContainer.forEach((mem,ind)=>{
     mem.innerHTML = `<img class="main" src=${initialMembersRecord[ind].image} alt="" >
@@ -193,57 +175,3 @@ allMemberContainer.forEach((mem,ind)=>{
         mem.classList.remove("on-hover")
     })
 })
-//  =   "
-
-
-
-//  hover implementation for members
-// allMembers.forEach((member,index) => {
-     
-//     member.addEventListener("mouseover",() => {
-//         member.innerHTML = currentMouseOver;
-        
-//         member.classList.add("on-hover")
-//     } ) 
-
-//     member.addEventListener("mouseout",() => {
-//         member.innerHTML = 1222222
-        
-//         // member.classList.add("on-hover")
-//     } ) 
-    
-
-// }
-    
-// )
-
-// allMembers.forEach((member,index) => {
-
-//     member.addEventListener("mouseout",() => {
-        
-//         allMemberContainer.innerHTML = initialValue;
-        
-//         member.classList.remove("on-hover")
-//     } )
-
-
-// })
-
-
-
-menu_start.addEventListener('click', () =>{
-    // menu_start.classList.toggle('active');
-    menu_close.classList.toggle('active');
-    hamburger_child.classList.toggle('active');
-    menu_start.classList.toggle('active');
-  
-  
-})
- 
-menu_close.addEventListener('click', () =>{
-    // menu_start.classList.toggle('active');
-    menu_close.classList.toggle('active');
-    hamburger_child.classList.toggle('active');
-    menu_start.classList.toggle('active');
-  })
-

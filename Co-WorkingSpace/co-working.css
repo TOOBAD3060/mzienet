@@ -9,33 +9,12 @@ section.co-working{
     background-color:rgba(128, 128, 128, 0.386);
     background-blend-mode: color-burn;
 }
-section.co-working::after{
-    content: "";
-    display: inline-block;
-    width: 100%;
-    height: 73vh;
-    position: relative;
-    top: -2.9em;
-    left: -6em;
-    z-index: 0.5;
-    overflow-x: hidden;
-    background-color: rgba(25, 160, 252,0.5);
-    animation: moveup 2s ease-out;
-    animation-fill-mode: forwards;
-}
-@keyframes moveup {
-    0%{
-        top:-50px;
-    }
-    100%{
-        top: -1530px;
-    }
-}
+
 section.co-working div.details{
     z-index: 10000;
     color: #fff;
-    /* position: absolute; */
 }
+
 section.co-working h1.cws{
         color: #fff;
         font-size: 60px;
@@ -90,12 +69,9 @@ article.video::before {
 article.video img#txt{
     position: relative;
     bottom: -1em;
-
 }
 
     /* Offers */
-
-
     section.offers h3{
         color: brown;
         font-family: 'Poppins', sans-serif;
@@ -188,7 +164,7 @@ article.video img#txt{
     
     section.benefits .innovative-img article img{
         position: relative;
-        top: -1em;
+        top: -3em;
         width: 500px;
         height: 220px;
         border-radius: 10px;
@@ -244,8 +220,8 @@ article.video img#txt{
 
 
     @media (max-width:770px){
-
-        section.co-working{
+        /* Portfolio start */
+    section.co-working{
         height: 50vh;
     }
     section.co-working  h1.cws{
@@ -310,7 +286,8 @@ section.offers  article.desk-img div.desk-text p{
 
     /* Benefits */
     section.benefits{
-        margin: 0 0 3em;
+        height: 90vh;
+        margin: 0 0;
     }
     section.benefits .innovative-img{
         display: block;

@@ -1,6 +1,5 @@
 /* Portfolio start */
 section.portfolio{
-    /* height: 73vh; */
     background-image: url(/images/people.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -186,7 +185,6 @@ section.portfolio  h1.portfolio-head{
 section.portfolio  p.portfolio-text{
         margin: 2em 0 3em;
         font-size: 17px;
-        /* width: 300px; */
         width: auto;
         line-height: 20px;
 }
@@ -202,7 +200,6 @@ section.what-we-do h1.wwd-head{
 }
 section.what-we-do p.wwd-text{
     font-size: 16px;
-    /* width: 400px; */
     font-weight: 300;
 }
 
@@ -248,7 +245,6 @@ article.projects_and_images div.each-project img{
          
    section.young-talent .yt-text {
     font-size: 17px;
-    /* width: 80%; */
     width: auto;
    }
    section.young-talent .yt-head{
